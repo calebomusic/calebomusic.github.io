@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-My name is Caleb.
+My name is Caleb Ontiveros.
 
-I'm excited about the future, philosophy, programming, and bold ideas.
+This is my website.
