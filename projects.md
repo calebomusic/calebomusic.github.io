@@ -8,10 +8,10 @@ permalink: /projects/
   - Explosive maze generator and game.
   - Built with JavaScript, Matter.js, HTML5, CSS3, and Canvas.
 * ### [Freedm](https://calebomusic.github.io/freedm/)
-  - Music sequencer. Press play. Experience Freedm.
-  - Built with React, Redux, and Howler.js.
+  - Click on a Cell. Press play. Experience Freedm.
+  - Music sequencer built with React, Redux, and Howler.js.
 * ### [Shmasana](https://shmasana.herokuapp.com)
-  - Full-stack, single-page project management application inspired by Asana
+  - Full-stack, single-page project management application inspired by Asana.
   - Built with Rails, postgres, React, and Redux.
 * ### [Complacent Class](https://calebomusic.github.io/complacentClass/)
   - What do you know about disruption?
