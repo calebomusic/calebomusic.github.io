@@ -4,6 +4,9 @@ title: Projects
 permalink: /projects/
 ---
 
+* ### [The Complacent Class](https://calebomusic.github.io/complacentClass/)
+  - What do you know about disruption?
+  - D3 widgets and article based on Tyler Cowen's [ The Complacent Class](https://smile.amazon.com/Complacent-Class-Self-Defeating-Quest-American/dp/1250108691).
 * ### [Garden of Forking Paths](https://calebomusic.github.io/garden-of-forking-paths/)
   - Explosive maze generator and game.
   - Built with JavaScript, Matter.js, HTML5, CSS3, and Canvas.
@@ -13,6 +16,3 @@ permalink: /projects/
 * ### [Shmasana](https://shmasana.herokuapp.com)
   - Full-stack, single-page project management application inspired by Asana.
   - Built with Rails, postgres, React, and Redux.
-* ### [The Complacent Class](https://calebomusic.github.io/complacentClass/)
-  - What do you know about disruption?
-  - D3 widgets and article based on Tyler Cowen's [ The Complacent Class](https://smile.amazon.com/Complacent-Class-Self-Defeating-Quest-American/dp/1250108691).
