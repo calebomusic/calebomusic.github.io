@@ -129,3 +129,22 @@ img[align=left] {
 img[align=right] {
   margin-left: 3%;
 }
+
+.subscribe {
+  font-size: 11px;
+  width: 200px;
+}
+
+.content {
+  display: block;
+  float: left;
+  width: 90%;
+  height: 100%;
+}
+
+.post {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+}
