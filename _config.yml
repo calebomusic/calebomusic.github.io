@@ -18,7 +18,7 @@ theme_settings:
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
 
   # Icons
-  rss: true
+  rss: 
   email_address: # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
