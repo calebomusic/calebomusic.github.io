@@ -6,3 +6,9 @@
   color: lighten($text-color, 30%);
   font-size: 0.9em;
 }
+
+.icons {
+  color: black;
+  display: inline-flex;
+  cursor: pointer;
+}
