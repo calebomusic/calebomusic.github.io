@@ -4,10 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is a lightweight, minimalist Jekyll blog styled using Materialize CSS. Thanks for visiting!
+My name is Caleb Ontiveros.
 
-- Everything that can go wrong, will go wrong.
+This is my website.
 
-1. One
-2. Two
-3. Three
+There will be more here soon.
