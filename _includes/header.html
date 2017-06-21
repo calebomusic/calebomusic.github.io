@@ -1,13 +1,13 @@
 <header>
-	<nav class="nav">
+	<nav class="nav indigo lighten-5">
 		<div class="container">
 			<div class="nav-wrapper">
-				<a href="{{ site.baseurl }}/" class="title">{{ site.theme_settings.title }}</a>
+				<a href="{{ site.baseurl }}/" class="title black-text">{{ site.theme_settings.title }}</a>
 				<ul class="right">
 					{% for page in site.pages %}
 					{% if page.title and page.hide != true %}
 					<li>
-						<a href="{{ page.url | prepend: site.baseurl }}">
+						<a class="black-text" href="{{ page.url | prepend: site.baseurl }}">
 							{{ page.title }}
 						</a>
 					</li>
