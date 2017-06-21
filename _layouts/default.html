@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html class="no-js">
-  {% include head.html %}
-  <body>
-    {% include header.html %}
-    <!-- <div class="main"> -->
-      <div class="content">
+{% include head.html %}
+<body>
+  {% include header.html %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m8 l9">
         {{ content }}
       </div>
-    <!-- </div> -->
-    <section class="secondary-content">
-      <div class='subscribe'>
-        {% include contact.html %}
-      </div>
+      <div class="col s12 m4 l3">
+        <section class="row">
+          <div class='col s12'>
+            {% include another_card.html %}
+          </div>
 
-      <div class='subscribe'>
-        {% include subscribe.html %}
-      </div>
-    </section>
+          <div class='col s12'>
+            {% include subscribe.html %}
+          </div>
 
-    <hr>
-    {% include footer.html %}
-  </body>
-</html>
+          <div class='col s12'>
+            {% include contact.html %}
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+</body>
