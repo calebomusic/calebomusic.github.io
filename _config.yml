@@ -1,19 +1,17 @@
 # SITE CONFIGURATION
-baseurl: "/materializeJekyllTheme/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://calebomusic.github.io" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: "Materialize CSS Theme"
+  title: "Caleb Ontiveros"
   avatar:
   gravatar: # Email MD5 hash
-  description: "Website of Materialize CSS Theme." # used by search engines
+  description: "Website of Caleb Ontiveros. Programmer, Philosopher." # used by search engines
 
   # Header and footer text
   header_text:
-   <p>Welcome your new thought leader:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-   <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
 
   header_text_feature_image:
   footer_text: true
@@ -47,9 +45,9 @@ theme_settings:
   str_follow_on: "Follow on"
   str_rss_follow: "Follow RSS feed"
   str_email: "Email"
-  str_next: "Next"
-  str_prev: "Previous"
-  str_continue_reading: "Continue reading"
+  str_next: ">"
+  str_prev: "<"
+  str_continue_reading: "Continue"
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
