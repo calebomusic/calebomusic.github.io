@@ -7,7 +7,7 @@ permalink: /projects/
 * ### [The Complacent Class](https://calebomusic.github.io/complacentClass/)
   - What do you know about disruption?
   - D3 widgets and short piece based on Tyler Cowen's [The Complacent Class](https://smile.amazon.com/Complacent-Class-Self-Defeating-Quest-American/dp/1250108691). Inspired by NYT's [You](https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html) [Draw](https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html) [It](https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html) series.
-* ### [Materialize CSS](https://github.com/calebomusic/materializeJekyllTheme)
+* ### [Materialize Jekyll Theme](https://github.com/calebomusic/materializeJekyllTheme)
   - An open-source, minimalist, and responsive Jekyll blog styled using Materialize CSS.
 * ### [Garden of Forking Paths](https://calebomusic.github.io/garden-of-forking-paths/)
   - Explosive maze generator and game.
