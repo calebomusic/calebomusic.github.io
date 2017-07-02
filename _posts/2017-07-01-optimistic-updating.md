@@ -13,7 +13,7 @@ Let's start with a problem. Suppose you are making a todo app and you want to up
 
 One way to implement this: when the title of a todo changes in the todo detail, send a request to the backend updating the todo's title. Once the todo title is successfully updated, you fire off a response to the frontend, updating the todo's title in the todo detail and todo list. Unfortunately, this can cause problems.
 
-If someone is typing at a reasonably high speed and the request-response cycle between the frontend and backend are not up to snuff, the user may be frustrated by the following. They type in "t" (and so fire off the request-response cycle) and then type in "o" (an so fire off another request-response cycle) -- but as soon as they type "o" the first response is received by the frontend, updating the todo's title to "t". The user will experience typing in "to", which is transformed into "t". Now if they quickly press "o" again, the todo's title will end up being updated to "too"... This makes for slightly unpleasant UI.
+If someone is typing at a reasonably high speed and the request-response cycle between the frontend and backend is not up to snuff or fast enough, the user may be frustrated by the following situation: They type in "t" (and so fire off the request-response cycle) and then type in "o" (an so fire off another request-response cycle) -- but as soon as they type "o" the first response is received by the frontend, updating the todo's title to "t". The user will experience typing in "to", which is transformed into "t". Disappearing letters! Now if they quickly press "o" again, the todo's title will end up being updated to "too"... This makes for slightly unpleasant UI.
 
 One way to fix this is with optimistic updating: update the UI instantly without waiting for a successful save on the backend. Hence the optimism: update the app without validation. However, if the update was invalid one will need to return to a previous valid state.
 
@@ -28,7 +28,7 @@ In more detail: if a todo's title is changed, dispatch `UPDATE_TODO` action. As 
 ```javascript
 updateTodo(action.todo, successfulUpdate, revertOnError);
 ```
-Or this using promises something like this:
+Or, using promises, something like this:
 ```javascript
 updateTodo().then((todo) => successfulUpdate(todo)).catch((todo) => revertOnError(todo))
 ```
@@ -72,6 +72,6 @@ const OptimisticReducer = (reducer) => {
 }
 ```
 
-First, `newState` is created using lodash's merge function (remembering that state is immutable). If a action has the status of `BEGIN` we pass the action to the `TodoReducer` which updates the state with the new todo (nothing exciting going on there it's an ordinary reducer). If the backend is successfully updated, `OptimisticReducer` will receive an action with the status of `END` and we will save the todo as `past` and delete the previous past valid todo (if there was one). Remember, this action will be executed by the success callback or fulfillment function of `updateTodo`. Finally, if the error callback or reject function is executed an action with the status `REVERT` will be dispatched. This will replace the existing todo with the last valid todo.
+First, `newState` is created using lodash's merge function (remembering that state is immutable). If an action has the status of `BEGIN` we pass the action to the `TodoReducer` which updates the state with the new todo (nothing exciting going on there, it's an ordinary reducer). If the backend is successfully updated, `OptimisticReducer` will receive an action with the status of `END` and we will save the todo as `past` and delete the previous past valid todo (if there was one). Remember, this action will be executed by the success callback or fulfillment function of `updateTodo`. Finally, if the error callback or reject function is executed, an action with the status `REVERT` will be dispatched. This will replace the existing todo with the last valid todo.
 
-That's a relatively simple way to implement optimistic updating with redux then. Here's a helpful way of implementing a similar [Undo History with Redux](http://redux.js.org/docs/recipes/ImplementingUndoHistory.html) from the docs.
+That's a relatively simple way to implement optimistic updating with redux then. Here's a helpful write up on [Undo History with Redux](http://redux.js.org/docs/recipes/ImplementingUndoHistory.html) from really quite nice docs.
