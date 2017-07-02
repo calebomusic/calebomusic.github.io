@@ -9,7 +9,7 @@ One nifty technique that can be implemented with higher-order reducers is optimi
 
 Let's start with a problem. Suppose you are making a todo app and you want to update the title of the todo. The "backend" consists of a server side rails app, the "frontend" consists of a client side Redux app. Now suppose that the title of the todo resides in two places in the app: a todo list and a todo detail. Asana (link) is an instance of this pattern and [Shmasana](shmasana.herokuapp.com) is as well:
 
-![Todo List / Todo Detail](https://github.com/calebomusic/Shmasana/blob/master/docs/screenshots/charles.png)
+![Todo List / Todo Detail](https://github.com/calebomusic/Shmasana/blob/master/docs/screenshots/charles.png?raw=true)
 
 One way to implement this: when the title of a todo changes in the todo detail, send a request to the backend updating the todo's title. Once the todo title is successfully updated, you fire off a response to the frontend, updating the todo's title in the todo detail and todo list. Unfortunately, this can cause problems.
 
