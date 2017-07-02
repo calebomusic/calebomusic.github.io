@@ -6,6 +6,8 @@ permalink: /about/
 
 My name is Caleb Ontiveros.
 
-This is my website.
+I am an Frontend Engineering Intern at [Scaled Inference](http://scaledinference.com/).
 
-There will be more here soon.
+I write about philosophy, politics, programming, amongst other things.
+
+I am excited about bold ideas and the future.
