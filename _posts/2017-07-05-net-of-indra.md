@@ -7,7 +7,7 @@ title: The Net of Indra in JavaScript
 
 ![https://thesupremescience.files.wordpress.com/2014/11/4183494604_e56101e4d0_o.jpg](The Net of Indra)
 
-The metaphor of Indra's net illustrates the concepts of `emptiness` and `interpenetration` in Buddhism. The idea is wonderfully puzzling and aesthetically appealing. [Graham Priest](https://www.google.com/search?q=graham+priest&oq=graham+priest&aqs=chrome..69i57j69i60j69i61l2j69i60j35i39.2254j0j4&sourceid=chrome&ie=UTF-8) has at least one brilliant article on the topic, formalizing the idea with graph theory ([Google Books](https://books.google.com/books?id=MMX9CAAAQBAJ&printsec=frontcover&source=gbs_atb#v=onepage&q=indra&f=false)). In this post I want to try capture the idea in JavaScript. It won't be as precise, but should push us closer to the precision of formal graph theory while retaining the character of the worldview. If you happen to like JavaScript, metaphysics, and Buddhism you've arrived -- if not, this post may not make much sense.
+The metaphor of Indra's net illustrates the concepts of `emptiness` and `interpenetration` in Buddhism. The idea is wonderfully puzzling and aesthetically appealing. [Graham Priest](https://www.google.com/search?q=graham+priest&oq=graham+priest&aqs=chrome..69i57j69i60j69i61l2j69i60j35i39.2254j0j4&sourceid=chrome&ie=UTF-8) has at least one very article on the topic, formalizing the idea with graph theory ([Google Books](https://books.google.com/books?id=MMX9CAAAQBAJ&printsec=frontcover&source=gbs_atb#v=onepage&q=indra&f=false)). In this post I want to try capture the idea in JavaScript. It won't be as precise, but should push us closer to the precision of formal graph theory while retaining the character of the worldview. If you happen to like JavaScript, metaphysics, and Buddhism you've arrived -- if not, this post may not make much sense.
 
 As a first pass, let's say that `emptiness` is the opposite of independent existence. From Nagurjuna:
 
@@ -142,7 +142,7 @@ Ok, so just what is this JS representing? The relational nature of all things. [
 
 ![http://i2.cdn.cnn.com/cnnnext/dam/assets/130502152627-rubber-duck-in-hong-kong-1-horizontal-large-gallery.jpg](Wat duck)
 
-Priest give the helpful example of time. Newton thought that time had its own independent existence. The time, 1066, could have existed without any other thing in the universe existing. There are possible worlds which only include a few times and nothing else. On the other hand, for the German philosopher Leibniz, what it is to be a time is a purely relational matter. The time 1066 came after the reign of Marcus Aurelius and before the Renaissance. Time is defined by it's relation to other things. This seems much more reasonable to me.
+Priest give the helpful example of time. Newton thought that time had its own independent existence. The time, 1066, could have existed without any other thing in the universe existing. There are possible worlds which only include a few times and nothing else. On the other hand, for the German philosopher Leibniz, what it is to be a time is a purely relational matter. The time 1066 came after the reign of Marcus Aurelius and before the Renaissance. Time is defined by its relation to other things. This seems much more reasonable to me.
 
 Now just extend that picture to everything! Priest continues:
 
