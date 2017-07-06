@@ -11,6 +11,30 @@ img {
   https://raw.githubusercontent.com/jwarby/pygments-css/master/manni.css
 */
 
+.highlighter-rouge {
+  white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  white-space: pre-wrap;       /* css-3 */
+  /*word-wrap: break-word;       /* Internet Explorer 5.5+ */*/
+  white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+  /*word-break: break-all;*/
+  white-space: normal;
+  width: 100%;
+  font-size: 14px;
+ }
+.highlight { background-color: #e3f2fd;
+  white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  white-space: pre-wrap;       /* css-3 */
+  /*word-wrap: break-word;       /* Internet Explorer 5.5+ */*/
+  white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+  /*word-break: break-all;*/
+  /*white-space: normal;*/
+  width: 100%;
+  font-size: 14px;
+ }
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #0099FF; font-style: italic } /* Comment */
 /*.highlight .err { color: #AA0000; background-color: #FFAAAA } /* Error */*/
@@ -18,7 +42,7 @@ img {
 .highlight .o { color: #555555 } /* Operator */
 .highlight .cm { color: #0099FF; font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: #009999 } /* Comment.Preproc */
-.highlight .c1 { color: #c5cae9 ; font-style: italic } /* Comment.Single */
+.highlight .c1 { color: #0099FF ; font-style: italic } /* Comment.Single */
 .highlight .cs { color: #0099FF; font-weight: bold; font-style: italic } /* Comment.Special */
 .highlight .gd { background-color: #FFCCCC; border: 1px solid #CC0000 } /* Generic.Deleted */
 .highlight .ge { font-style: italic } /* Generic.Emph */
