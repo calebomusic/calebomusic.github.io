@@ -5,9 +5,9 @@ title: The Net of Indra in JavaScript
 
 >Far away in the heavenly abode of the great god Indra, there is a wonderful net which has been hung by some cunning artificer in such a manner that it stretches out infinitely in all directions. In accordance with the extravagant tastes of deities, the artificer has hung a single glittering jewel in each "eye" of the net, and since the net itself is infinite in dimension, the jewels are infinite in number. There hang the jewels, glittering "like" stars in the first magnitude, a wonderful sight to behold. If we now arbitrarily select one of these jewels for inspection and look closely at it, we will discover that in its polished surface there are reflected all the other jewels in the net, infinite in number. Not only that, but each of the jewels reflected in this one jewel is also reflecting all the other jewels, so that there is an infinite reflecting process occurring.
 
-![https://thesupremescience.files.wordpress.com/2014/11/4183494604_e56101e4d0_o.jpg](The Net of Indra)
-
 The metaphor of Indra's net illustrates the concepts of `emptiness` and `interpenetration` in Buddhism. The idea is wonderfully puzzling and aesthetically appealing. [Graham Priest](https://www.google.com/search?q=graham+priest&oq=graham+priest&aqs=chrome..69i57j69i60j69i61l2j69i60j35i39.2254j0j4&sourceid=chrome&ie=UTF-8) has at least one very article on the topic, formalizing the idea with graph theory ([Google Books](https://books.google.com/books?id=MMX9CAAAQBAJ&printsec=frontcover&source=gbs_atb#v=onepage&q=indra&f=false)). In this post I want to try capture the idea in JavaScript. It won't be as precise, but should push us closer to the precision of formal graph theory while retaining the character of the worldview. If you happen to like JavaScript, metaphysics, and Buddhism you've arrived -- if not, this post may not make much sense.
+
+![The Net](/img/net_of_indra/net_of_indra.jpg)
 
 As a first pass, let's say that `emptiness` is the opposite of independent existence. From Nagurjuna:
 
@@ -29,9 +29,9 @@ function LinkedListNode(value) {
 We could create a LinkedListNode as follows:
 
 ```javascript
-let ordinaryNode = new LinkedListNode("ordinary")
+let ordinaryNode = new LinkedListNode("ordinary");
 
-console.log(node) // LinkedListNode { value: 'ordinary', next: null }
+console.log(node); // LinkedListNode { value: 'ordinary', next: null }
 ```
 
 In a sense our `ordinaryNode` has independent existence. It carries a value, its name: `ordinary`. We can set its next pointer to some other node and it would still carry that value. In fact we can create an entire list of nodes:
@@ -53,7 +53,7 @@ nextNode = nextNextNode;
 This does not look like our net. Every node in the list has its own existence, so it cannot represent emptiness at all. We can grasp `next node` without grasping `ordinary` which can be seen if we log `next node`:
 
 ```javascript
-console.log(nextNode) // LinkedListNode { value: 'ordinary', next: [Object] }
+console.log(nextNode); // LinkedListNode { value: 'ordinary', next: [Object] }
 ```
 
 Every node does encode every other node, hence a singly linked list hardly represents interpenetration.
@@ -93,7 +93,7 @@ Node.prototype.createRelation = function(relatum, type) {
 
   let relation = new Relation(type, this, relatum);
 
-  Node.addRelation(relation, this, relatum)
+  Node.addRelation(relation, this, relatum);
 }
 ```
 
@@ -104,9 +104,9 @@ let a = new Node(),
     b = new Node(),
     c = new Node();
 
-a.createRelation(b)
-b.createRelation(c)
-console.log(b) /*
+a.createRelation(b);
+b.createRelation(c);
+console.log(b); /*
 Node {
   relations: [
     Relation {
@@ -123,7 +123,7 @@ We're getting closer. Now `b` (and `a` and `c`) is just a node that contains a l
 
 The problem is that `a`, `b`, and `c` are instances of the class `Node`. To make the JavaScript representation more aligned with the net of Indra, we should have every relata be an instance of `Relation`. We want to be able to log something like this:
 
-```JavaScript
+```javascript
 /*
 Relation {
   relata: [
@@ -140,7 +140,7 @@ Here, all things objects are composed of `Relations` and nothing more. Moreover,
 
 Ok, so just what is this JS representing? The relational nature of all things. [Wat](https://www.destroyallsoftware.com/talks/wat)?
 
-![http://i2.cdn.cnn.com/cnnnext/dam/assets/130502152627-rubber-duck-in-hong-kong-1-horizontal-large-gallery.jpg](Wat duck)
+![Wat duck](/img/net_of_indra/rubber_duck.jpg)
 
 Priest give the helpful example of time. Newton thought that time had its own independent existence. The time, 1066, could have existed without any other thing in the universe existing. There are possible worlds which only include a few times and nothing else. On the other hand, for the German philosopher Leibniz, what it is to be a time is a purely relational matter. The time 1066 came after the reign of Marcus Aurelius and before the Renaissance. Time is defined by its relation to other things. This seems much more reasonable to me.
 
