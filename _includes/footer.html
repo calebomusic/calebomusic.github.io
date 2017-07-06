@@ -11,8 +11,20 @@
   <div class="footer-copyright">
     <div class="container">
     © 2017 Caleb Ontiveros
-    <a class="right">"Change your anchor to what did not happen rather than what did happen"</a>
+    <a class="right" id="random-quote"></a>
     </div>
   </div>
 </footer>
 {% endif %}
+
+<script type=text/javascript>
+const QUOTES = [
+        "Change your anchor to what did not happen rather than what did happen"
+      ],
+      anchor = document.getElementById("random-quote");
+
+let i = Math.floor(Math.random(QUOTES.length)),
+    quote = QUOTES[i];
+
+anchor.textContent = quote;
+</script>
