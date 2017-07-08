@@ -19,11 +19,14 @@
 
 <script type=text/javascript>
 const QUOTES = [
-        "Change your anchor to what did not happen rather than what did happen"
+        // "For life to be really fun, what you fear should line up with what you desire.",
+        // "Dealing with failure is easy: Work hard to improve. Success is also easy to handle: Work hard to improve.",
+        // "I never look back, darling, it distracts from the now.",
+        // "I’m the speed of light cracking through shivery atoms and god the sky whirls and withers like a melting rainbow."
       ],
       anchor = document.getElementById("random-quote");
 
-let i = Math.floor(Math.random(QUOTES.length)),
+let i = Math.floor(Math.random() * QUOTES.length),
     quote = QUOTES[i];
 
 anchor.textContent = quote;
