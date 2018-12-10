@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Stoa Privacy Policy
-permalink: /privacy
+permalink: /privacy/
 ---
 Caleb Ontiveros built the Stoa app (Stoa: Meditation & Stoicism) as a Freemium app. This SERVICE is provided by Caleb Ontiveros at no cost and is intended for use as is.
 
