@@ -2,52 +2,8 @@
 layout: default
 ---
 
-<div class="home">
-  {% if site.theme_settings.header_text %}
-  <div class="call-out"
-  style="background-image: url('{{ site.baseurl }}/{{ site.theme_settings.header_text_feature_image }}')">
-    {{ site.theme_settings.header_text }}
-  </div>
-  {% endif %}
-
-  <div class="posts">
-    {% for post in paginator.posts %}
-    <div class="post-teaser">
-      <header>
-        <h1>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
-          </a>
-        </h1>
-        <p class="meta">
-          {{ post.date | date: "%B %-d, %Y" }}
-        </p>
-      </header>
-      <div class="excerpt">
-        {{ post.excerpt }}
-        <a class="button" href="{{ post.url | prepend: site.baseurl }}">
-          {{ site.theme_settings.str_continue_reading }}
-        </a>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-
-  {% if paginator.total_pages > 1 %}
-  <br>
-  <footer class="footer-copyright blue darken-2 text-white hoverable">
-    <div class="pagination center">
-      {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="white-text" >
-        {{ site.theme_settings.str_prev }}
-      </a>
-      {% endif %}
-      {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="white-text" >
-        {{ site.theme_settings.str_next }}
-      </a>
-      {% endif %}
-    </div>
-  </footer>
-  {% endif %}
-</div>
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to https://calebontiveros.com/</title>
+<meta http-equiv="refresh" content="0; URL=https://calebontiveros.com/">
+<link rel="canonical" href="https://calebontiveros.com/">
